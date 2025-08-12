@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Daftar Produk')
-
 @section('content')
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
@@ -16,7 +14,7 @@
         <i class="bi bi-check-circle me-2"></i> {{ session('success') }}
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
-      <script>
+    <script>
         setTimeout(() => {
             const alert = document.getElementById('alert-success');
             if (alert) {
