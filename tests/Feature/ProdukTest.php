@@ -14,7 +14,7 @@ class ProdukTest extends TestCase
     #[Test]
     public function bisa_melihat_daftar_produk_dari_seeder()
     {
-        // Jalankan seeder
+
         $this->seed(\Database\Seeders\ProdukSeeder::class);
 
         // Akses daftar produk
@@ -36,10 +36,9 @@ class ProdukTest extends TestCase
             'stok' => 12,
         ]);
 
-        // Biasanya redirect setelah create
         $response->assertStatus(302);
 
-        // Cek produk ada di database (tidak cek id supaya fleksibel)
+
         $this->assertDatabaseHas('produks', [
             'nama' => 'Topi Baseball'
         ]);
@@ -48,7 +47,7 @@ class ProdukTest extends TestCase
     #[Test]
     public function bisa_menghapus_produk()
     {
-        // Tambah 1 produk manual
+
         $id = DB::table('produks')->insertGetId([
             'nama' => 'Produk Hapus',
             'deskripsi' => 'Akan dihapus.',
