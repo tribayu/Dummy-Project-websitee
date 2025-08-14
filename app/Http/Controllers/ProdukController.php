@@ -65,7 +65,7 @@ class ProdukController extends Controller
     public function update(Request $request, Produk $produk)
     {
         $request->merge([
-            'harga' => str_replace('.', '', $request->harga) 
+            'harga' => str_replace('.', '', $request->harga)
         ]);
 
         $request->validate([
