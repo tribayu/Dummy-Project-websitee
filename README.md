@@ -106,8 +106,8 @@ Password: bayu@#$%
 
 ## Tech Stack
 
-* **Backend:** Laravel 11+
-* **Frontend:** Blade + TailwindCSS
-* **Database:** MySQL
-* **Auth:** Laravel Breeze
+Backend : Laravel 11+
+Frontend: Blade + TailwindCSS
+Database: MySQL
+Auth    : Laravel Breeze
 
